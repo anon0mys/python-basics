@@ -1,7 +1,6 @@
 import pytest
 
 
-
 class IntsAndFloatsTest:
     def test_one(self):
         lucky = 7
