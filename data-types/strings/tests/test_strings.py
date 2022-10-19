@@ -32,11 +32,11 @@ class StringsTest:
 
         assert actual == expected
 
-    @pytest.mark.skip
+
     def test_four(self):
         rhyme = "peter piper picked a peck of picked peppers"
         # In place of the line below, call a method to achieve the expected output.
-        actual = None
+        actual = rhyme[::-1]
         expected = "sreppep dekcip fo kcep a dekcip repip retep"
 
         assert actual == expected
