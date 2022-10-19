@@ -1,0 +1,13 @@
+# python
+__pycache__
+*.pyc
+.ipython/
+venv/
+
+# editors
+*.sw[mnop]
+*.orig
+.idea/
+
+# testing
+.pytest_cache
