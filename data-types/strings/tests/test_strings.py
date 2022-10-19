@@ -7,26 +7,27 @@ class StringsTest:
 
         # In place of the line below, use a standard function to capitalize name
         # actual = <your code here>
-        actual = None
+        actual = name.capitalize()
+
 
         expected = "Alice"
 
         assert actual == expected
 
-    @pytest.mark.skip
+
     def test_two(self):
         name = "aLiCe"
         # In place of the line below, call a method to achieve the expected output.
-        actual = None
+        actual = name.upper()
         expected = "ALICE"
 
         assert actual == expected
 
-    @pytest.mark.skip
+
     def test_three(self):
         name = "AlIcE"
         # In place of the line below, call a method to achieve the expected output.
-        actual = None
+        actual = name.lower()
         expected = "alice"
 
         assert actual == expected
