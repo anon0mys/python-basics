@@ -41,38 +41,38 @@ class StringsTest:
 
         assert actual == expected
 
-    @pytest.mark.skip
+
     def test_five(self):
         word = "ticking"
         # In place of the line below, call a method to achieve the expected output.
-        actual = None
+        actual = word.replace("t", "k")
         expected = "kicking"
 
         assert actual == expected
 
-    @pytest.mark.skip
+
     def test_six(self):
         word = "ticking"
         # In place of the line below, call a method to achieve the expected output.
-        actual = None
+        actual = word.replace("ticking", "clocking")
         expected = "clocking"
 
         assert actual == expected
 
-    @pytest.mark.skip
+
     def test_seven(self):
         words = "five sleepy kittens"
         # In place of the line below, call a method to achieve the expected output.
-        actual = None
+        actual = words.replace("e", "*")
         expected = "fiv* sl**py kitt*ns"
 
         assert actual == expected
 
-    @pytest.mark.skip
+
     def test_eight(self):
         greeting = "Hello!!"
         # In place of the line below, call a method to achieve the expected output.
-        actual = None
+        actual = slice(-1)
         expected = "Hello!"
 
         assert actual == expected
