@@ -72,43 +72,42 @@ class StringsTest:
     def test_eight(self):
         greeting = "Hello!!"
         # In place of the line below, call a method to achieve the expected output.
-        actual = slice(-1)
+        actual = greeting[:-1]
         expected = "Hello!"
 
         assert actual == expected
 
-    @pytest.mark.skip
+
     def test_nine(self):
         greeting = "Hello!!\n"
         # In place of the line below, call a method to achieve the expected output.
-        actual = None
+        actual = greeting[:-1]
         expected = "Hello!!"
 
         assert actual == expected
 
-    @pytest.mark.skip
+
     def test_ten(self):
         greeting = "Hello!!\n\n"
         # In place of the line below, call a method to achieve the expected output.
-        actual = None
+        actual = greeting[:-1]
         expected = "Hello!!\n"
 
         assert actual == expected
 
-    @pytest.mark.skip
+
     def test_eleven(self):
         rhyme = "eeny, meeny, miny, moe"
         # In place of the line below, call a method to achieve the expected output.
-        actual = None
+        actual = rhyme.replace("e", "")
         expected = "ny, mny, miny, mo"
 
         assert actual == expected
 
-    @pytest.mark.skip
     def test_twelve(self):
         rhyme = "eeny, meeny, miny, moe"
         # In place of the line below, call a method to achieve the expected output.
-        actual = None
+        actual =
         expected = "ny, mny, mny, m"
 
         assert actual == expected
