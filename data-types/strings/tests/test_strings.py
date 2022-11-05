@@ -99,7 +99,10 @@ class StringsTest:
     def test_eleven(self):
         rhyme = "eeny, meeny, miny, moe"
         # In place of the line below, call a method to achieve the expected output.
-        actual = rhyme.replace("e", "")
+        actual = ""
+        for character in rhyme:
+            if character != "e":
+                actual += character
         expected = "ny, mny, miny, mo"
 
         assert actual == expected
@@ -107,7 +110,11 @@ class StringsTest:
     def test_twelve(self):
         rhyme = "eeny, meeny, miny, moe"
         # In place of the line below, call a method to achieve the expected output.
-        actual =
+
+        actual = ""
+        for character in rhyme:
+            if character not in ["e", "i", "o"]:
+                actual += character
         expected = "ny, mny, mny, m"
 
         assert actual == expected
