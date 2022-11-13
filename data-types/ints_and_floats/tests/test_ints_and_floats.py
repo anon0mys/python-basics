@@ -48,7 +48,8 @@ class IntsAndFloatsTest:
         # Using the variable defined above,
         # find out if the lucky number is even
         even = ""
-        if (7 % 2) == 0:
+        even = (lucky % 2)
+        assert even is False
             return even == True
             assert even == False
 
