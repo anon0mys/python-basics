@@ -1,5 +1,5 @@
 import pytest
-
+import math
 
 class IntsAndFloatsTest:
     def test_one(self):
@@ -7,74 +7,69 @@ class IntsAndFloatsTest:
         unlucky = 13
         # Using the two variables defined above,
         # add the lucky number and the unlucky number
-        sum = None
+        sum = lucky + unlucky
         assert sum == 20
 
-    @pytest.mark.skip
     def test_two(self):
         lucky = 7
         unlucky = 13
         # Using the two variables defined above,
         # subtract the unlucky from the lucky
-        difference = None
+        difference = lucky - unlucky
         assert difference == -6
 
-    @pytest.mark.skip
     def test_three(self):
         lucky = 7
         unlucky = 13
         # Using the two variables defined above,
         # divide unlucky by lucky
         # NOTE: this is integer division
-        quotient = None
+        quotient = unlucky//lucky
         assert quotient == 1
 
-    @pytest.mark.skip
     def test_four(self):
         lucky = 7
         unlucky = 13
         # Using the two variables defined above,
         # divide unlucky by lucky
-        quotient = None
+        quotient = unlucky/lucky
         assert quotient == 1.8571428571428572
 
-    @pytest.mark.skip
     def test_five(self):
         lucky = 7
         unlucky = 13
         # Using the two variables defined above,
         # find the remainder of the unlucky divided by the lucky
-        remainder = None
+        remainder = unlucky%lucky
         assert remainder == 6
 
-    @pytest.mark.skip
     def test_six(self):
         lucky = 7
         # Using the variable defined above,
         # find out if the lucky number is even
-        even = None
-        assert even == False
+        even = ""
+        even = (lucky % 2)
+        assert even is False
+            return even == True
+            assert even == False
 
-    @pytest.mark.skip
     def test_seven(self):
         pi = 3.14
         # Using the variable defined above,
         # round the number to the nearest whole number
-        rounded = None
+        rounded = round(pi)
         assert rounded == 3
 
-    @pytest.mark.skip
     def test_eight(self):
         pi = 3.14
         # Using the variable defined above,
         # round the number to one decimal place
-        rounded = None
+        rounded = round(pi, 1)
         assert rounded == 3.1
 
-    @pytest.mark.skip
     def test_nine(self):
         pi = 3.14
         # Using the variable defined above,
         # round the number to the next highest whole number
-        rounded = None
+        rounded = math.ceil(3.14)
         assert rounded == 4
